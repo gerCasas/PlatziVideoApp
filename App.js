@@ -3,6 +3,7 @@ import {Text} from 'react-native';
 
 import Home from './src/screens/containers/home';
 import Header from './src/sections/components/header';
+import SuggestionList from './src/videos/container/suggestion-list';
 
 export default function() {
   return (
@@ -13,6 +14,7 @@ export default function() {
       <Text>buscador</Text>
       <Text>categorias</Text>
       <Text>sugerencias</Text>
+      <SuggestionList />
     </Home>
   );
   1;
