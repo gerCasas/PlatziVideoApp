@@ -13,10 +13,8 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 10,
     flexDirection: 'row',
-    backgroundColor: 'red',
   },
   right: {
-    backgroundColor: 'green',
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-end',

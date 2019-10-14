@@ -8,9 +8,7 @@ import SuggestionList from './src/videos/container/suggestion-list';
 export default function() {
   return (
     <Home>
-      <Header>
-        <Text>test</Text>
-      </Header>
+      <Header />
       <Text>buscador</Text>
       <Text>categorias</Text>
       <Text>sugerencias</Text>
