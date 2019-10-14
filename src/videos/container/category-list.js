@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {View, Text, FlatList, StyleSheet} from 'react-native';
+import Layout from '../components/category-list-layout';
 import Empty from '../components/empty';
-import Separator from '../components/vertical-separator';
+import Separator from '../../sections/components/horizontal-separator';
 import Suggestion from '../components/suggestion';
 
 class categoryList extends Component {
@@ -12,14 +13,16 @@ class categoryList extends Component {
 
   render() {
     return (
-      <FlatList
-        horizontal
-        keyExtractor={this.keyExtractor}
-        data={this.props.list}
-        ListEmptyComponent={this.renderEmpty}
-        ItemSeparatorComponent={this.itemSeparator}
-        renderItem={this.renderItem}
-      />
+      <Layout title="Categorias">
+        <FlatList
+          horizontal
+          keyExtractor={this.keyExtractor}
+          data={this.props.list}
+          ListEmptyComponent={this.renderEmpty}
+          ItemSeparatorComponent={this.itemSeparator}
+          renderItem={this.renderItem}
+        />
+      </Layout>
     );
   }
 }
