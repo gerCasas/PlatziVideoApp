@@ -1,5 +1,7 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, SafeAreaView} from 'react-native';
+import {View, Image, StyleSheet, SafeAreaView} from 'react-native';
+
+const logo = require('../../../assets/logo.png');
 
 const styles = StyleSheet.create({
   logo: {
@@ -26,10 +28,7 @@ function Header({children}) {
     <View>
       <SafeAreaView>
         <View style={styles.container}>
-          <Image
-            source={require('../../../assets/logo.png')}
-            style={styles.logo}
-          />
+          <Image source={logo} style={styles.logo} />
           <View style={styles.right}>{children}</View>
         </View>
       </SafeAreaView>
