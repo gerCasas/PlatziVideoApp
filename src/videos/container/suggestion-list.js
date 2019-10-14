@@ -6,10 +6,10 @@ import Separator from '../components/vertical-separator';
 import Suggestion from '../components/suggestion';
 
 class SuggestionList extends Component {
+  keyExtractor = item => item.id.toString();
   renderEmpty = () => <Empty text="No hay sugerencias" />;
   itemSeparator = () => <Separator />;
   renderItem = ({item}) => <Suggestion {...item} />;
-  keyExtractor = item => item.id.toString();
 
   render() {
     return (
